@@ -1,0 +1,25 @@
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:#080b0a;color:#fff}
+.page{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:34px 18px;background-image:url("assets/background.jpg");background-size:cover;background-position:center;background-attachment:fixed;overflow:hidden}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.48),rgba(0,0,0,.78) 46%,rgba(0,0,0,.86))}
+.content{position:relative;width:min(100%,760px);text-align:center;padding:28px 18px 22px;border:1px solid rgba(255,255,255,.16);border-radius:28px;background:rgba(5,10,9,.48);backdrop-filter:blur(5px);box-shadow:0 18px 70px rgba(0,0,0,.38)}
+.brand-mark{margin:0 auto 8px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;border:2px solid #f4c84a;color:#f4c84a;font-size:34px;text-shadow:0 0 15px #e6aa22}
+.eyebrow{font-size:11px;letter-spacing:3px;color:#f2d27a;margin:10px 0}
+h1{font-size:clamp(38px,9vw,68px);line-height:1;margin:8px 0;font-weight:900;letter-spacing:1px;text-shadow:0 4px 18px #000}
+h1 span{color:#f4ce58}
+.subtitle{font-size:clamp(14px,3.5vw,21px);color:#e5e5e5;margin:12px 0 30px}
+.bookmakers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.bookmaker{min-height:150px;border-radius:22px;padding:18px 10px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;color:#fff;border:2px solid rgba(255,255,255,.55);box-shadow:0 8px 22px rgba(0,0,0,.35);transition:transform .15s}
+.bookmaker:active,.whatsapp:active{transform:scale(.98)}
+.bet{background:linear-gradient(145deg,#0757d8,#03265f);border-color:#35a7ff}
+.mel{background:linear-gradient(145deg,#ff8a13,#a93b00);border-color:#ffc05a}
+.name{font-size:clamp(24px,6vw,36px);font-weight:900;font-style:italic}
+.caption{font-size:13px;font-weight:800;letter-spacing:1px;margin-top:12px}
+.bookmaker strong{font-size:clamp(25px,6vw,36px);color:#ffe52e;margin-top:2px}
+.promo{margin:20px 0;padding:18px 10px;border:2px dashed #f1d34e;border-radius:18px;background:rgba(9,22,16,.75);display:flex;flex-direction:column;gap:2px}
+.promo span{font-size:17px;font-weight:800}
+.promo strong{font-size:clamp(38px,9vw,54px);letter-spacing:2px;color:#8cf59c}
+.whatsapp{display:flex;align-items:center;justify-content:center;gap:12px;padding:20px 12px;border-radius:18px;background:linear-gradient(180deg,#35dc62,#079c39);border:2px solid #91ff9f;color:#031b0b;text-decoration:none;font-weight:900;font-size:clamp(14px,3.5vw,20px);box-shadow:0 8px 24px rgba(0,180,65,.25)}
+.wa-icon{font-size:25px}
+.footer{font-size:11px;letter-spacing:4px;color:rgba(255,255,255,.65);margin:20px 0 0}
+@media(max-width:430px){.content{padding:22px 13px 18px}.bookmakers{gap:10px}.bookmaker{min-height:132px;border-radius:17px}.whatsapp{gap:7px;padding:17px 8px}.page{background-attachment:scroll}}
